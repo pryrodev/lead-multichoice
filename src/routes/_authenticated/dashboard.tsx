@@ -1,18 +1,22 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState, type FormEvent } from "react";
 import { z } from "zod";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { btn, ButtonLink } from "@/components/site/ui";
 import { useI18n } from "@/i18n/I18nProvider";
+import { AccountProfileCard } from "@/components/client-dashboard/AccountProfileCard";
+import { EngagementDashboard } from "@/components/client-dashboard/EngagementDashboard";
+import type { ClientView } from "@/components/client-dashboard/dashboard-data";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
       { title: "Client dashboard | LEAD MULTICHOICE" },
-      { name: "description", content: "Manage your LEAD MULTICHOICE client profile." },
+      { name: "description", content: "Follow your requests and business engagements." },
       { property: "og:title", content: "Client dashboard | LEAD MULTICHOICE" },
-      { property: "og:description", content: "Manage your client profile." },
+      { property: "og:description", content: "Follow your requests and business engagements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "robots", content: "noindex" },
@@ -28,9 +32,6 @@ const schema = z.object({
 });
 type Profile = z.infer<typeof schema> & { email: string };
 
-const field =
-  "mt-1.5 block w-full rounded border border-input bg-background px-3 py-2.5 text-[15px] focus:border-corporate focus:outline-none";
-
 export async function signOutTo(navigate: ReturnType<typeof useNavigate>) {
   await supabase.auth.signOut();
   navigate({ to: "/auth", replace: true });
@@ -40,7 +41,8 @@ function Dashboard() {
   const { tc } = useI18n();
   const { user, isAdmin } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [msg, setMsg] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const [view, setView] = useState<ClientView>("buyer");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -58,25 +60,35 @@ function Dashboard() {
   async function save(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!user) return;
-    const r = schema.safeParse(Object.fromEntries(new FormData(e.currentTarget)));
-    if (!r.success) return setMsg(tc(r.error.issues[0]?.message ?? "Check the form"));
+    const result = schema.safeParse(Object.fromEntries(new FormData(e.currentTarget)));
+    if (!result.success) {
+      setMessage(tc(result.error.issues[0]?.message ?? "Check the form"));
+      return;
+    }
     const { error } = await supabase
       .from("profiles")
-      .update({ ...r.data, updated_at: new Date().toISOString() })
+      .update({ ...result.data, updated_at: new Date().toISOString() })
       .eq("id", user.id);
-    setMsg(error ? tc("Could not save. Please try again.") : tc("Saved."));
+    setMessage(error ? tc("Could not save. Please try again.") : tc("Saved."));
   }
 
+  const profileCard = <AccountProfileCard profile={profile} message={message} onSave={save} />;
+
   return (
-    <div className="bg-surface">
+    <div className="min-h-screen bg-surface pb-14">
       <section className="bg-brand-primary text-background">
-        <div className="container-site flex flex-wrap items-end justify-between gap-6 py-14">
+        <div className="container-site flex flex-wrap items-end justify-between gap-6 py-10 md:py-14">
           <div>
             <p className="eyebrow mb-3 text-brass-light">{tc("Client dashboard")}</p>
-            <h1 className="text-[34px] text-background md:text-[44px]">
-              {tc("Hello")}
+            <h1 className="text-[32px] text-background md:text-[42px]">
+              {tc("Welcome back")}
               {profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}.
             </h1>
+            <p className="mt-2 max-w-xl text-background/80">
+              {tc(
+                "Follow your requests, engagement progress and the latest updates from our team.",
+              )}
+            </p>
           </div>
           <div className="flex flex-wrap gap-3">
             {isAdmin && (
@@ -90,58 +102,43 @@ function Dashboard() {
           </div>
         </div>
       </section>
-      <div className="container-site grid gap-8 py-12 lg:grid-cols-[1.4fr_1fr]">
-        <form
-          key={profile ? "loaded" : "loading"}
-          onSubmit={save}
-          className="rounded-lg bg-background p-7 shadow-sm"
-        >
-          <h2 className="text-[22px]">{tc("Your details")}</h2>
-          <p className="mt-1 text-[14px] text-muted-foreground">{profile?.email}</p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <label className="block text-[14px] font-medium sm:col-span-2">
-              {tc("Full name")}
-              <input name="full_name" defaultValue={profile?.full_name} className={field} />
-            </label>
-            <label className="block text-[14px] font-medium">
-              {tc("Company")}
-              <input name="company" defaultValue={profile?.company} className={field} />
-            </label>
-            <label className="block text-[14px] font-medium">
-              {tc("Phone")}
-              <input name="phone" type="tel" defaultValue={profile?.phone} className={field} />
-            </label>
+
+      <div className="container-site">
+        <Tabs value={view} onValueChange={(value) => setView(value as ClientView)}>
+          <div className="flex flex-col gap-4 border-b border-border py-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="mb-2 text-[13px] font-medium text-muted-foreground">
+                {tc("Viewing dashboard as")}
+              </p>
+              <TabsList className="h-auto flex-wrap border border-border bg-background p-1">
+                <TabsTrigger
+                  value="buyer"
+                  className="data-[state=active]:bg-brand-primary data-[state=active]:text-brand-white"
+                >
+                  {tc("Purchasing entity")}
+                </TabsTrigger>
+                <TabsTrigger
+                  value="supplier"
+                  className="data-[state=active]:bg-brand-primary data-[state=active]:text-brand-white"
+                >
+                  {tc("International supplier")}
+                </TabsTrigger>
+              </TabsList>
+            </div>
+            <ButtonLink to="/contact" variant="primary" arrow>
+              {tc(
+                view === "buyer" ? "Submit a sourcing request" : "Discuss a supplier opportunity",
+              )}
+            </ButtonLink>
           </div>
-          {msg && (
-            <p role="status" className="mt-4 text-[14px] text-corporate">
-              {msg}
-            </p>
-          )}
-          <button className={btn("primary", "mt-6")}>{tc("Save details")}</button>
-        </form>
-        <aside className="rounded-lg bg-background p-7 shadow-sm">
-          <h2 className="text-[22px]">{tc("Next steps")}</h2>
-          <ul className="mt-4 space-y-3 text-[15px]">
-            <li>
-              <Link to="/contact" className="text-corporate hover:text-brand-primary">
-                {tc("Discuss a new opportunity →")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/procurement-opportunities"
-                className="text-corporate hover:text-brand-primary"
-              >
-                {tc("Browse tender portals →")}
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="text-corporate hover:text-brand-primary">
-                {tc("See our services →")}
-              </Link>
-            </li>
-          </ul>
-        </aside>
+
+          <TabsContent value="buyer" className="mt-0">
+            <EngagementDashboard view="buyer">{profileCard}</EngagementDashboard>
+          </TabsContent>
+          <TabsContent value="supplier" className="mt-0">
+            <EngagementDashboard view="supplier">{profileCard}</EngagementDashboard>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );

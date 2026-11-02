@@ -90,11 +90,6 @@ export function WorldMap({ className }: { className?: string }) {
                   repeatCount="indefinite"
                 />
               </circle>
-              {hq && (
-                <text x={x + 8} y={y + 4} fontSize="11" fontWeight="600" fill="var(--brand-white)">
-                  Kigali HQ
-                </text>
-              )}
             </g>
           );
         })}

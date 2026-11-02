@@ -77,7 +77,7 @@ function WhyUs() {
           </div>
         </div>
       </section>
-      <CallToActionSection />
+      <CallToActionSection brandGradient />
     </>
   );
 }

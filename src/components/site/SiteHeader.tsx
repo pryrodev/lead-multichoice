@@ -1,6 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { ArrowUpRight, Mail, MapPin, Menu, Phone, X } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { company, nav } from "@/content/site";
@@ -33,6 +33,7 @@ export function SiteHeader() {
   const { pathname } = useLocation();
   const { user } = useAuth();
   const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => setOpen(false), [pathname]);
 
@@ -108,6 +109,18 @@ export function SiteHeader() {
                     >
                       {t(shortNavKeys[item.to] ?? navKeys[item.to])}
                     </Link>
+                    {active && (
+                      <motion.span
+                        layoutId="site-nav-active-indicator"
+                        aria-hidden="true"
+                        className="pointer-events-none absolute bottom-[0.35rem] left-1 right-1 h-0.5 rounded-full bg-brand-primary"
+                        transition={
+                          reduceMotion
+                            ? { duration: 0.01 }
+                            : { type: "spring", stiffness: 420, damping: 34 }
+                        }
+                      />
+                    )}
                   </li>
                 );
               })}

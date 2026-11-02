@@ -3,7 +3,6 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/i18n/I18nProvider";
-import { WorldMap } from "./WorldMap";
 
 type Variant = "primary" | "outline" | "light" | "ghostLight";
 const variants: Record<Variant, string> = {
@@ -167,13 +166,25 @@ export function PageHero({
 export function CallToActionSection({
   title = "Let's move your business into Rwanda.",
   text = "Supplier, buyer or partner — tell us what you need.",
+  brandGradient = false,
 }: {
   title?: string;
   text?: string;
+  brandGradient?: boolean;
 }) {
   const { t, tc } = useI18n();
   return (
-    <section className="relative overflow-hidden bg-brand-primary text-background">
+    <section
+      className="relative overflow-hidden bg-brand-primary text-background"
+      style={
+        brandGradient
+          ? {
+              background:
+                "radial-gradient(125% 125% at 50% 10%, var(--brand-white) 40%, var(--brand-primary) 100%)",
+            }
+          : undefined
+      }
+    >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.07]"
         style={{
@@ -182,45 +193,81 @@ export function CallToActionSection({
         }}
         aria-hidden
       />
-      <div className="container-site relative grid items-center gap-10 py-20 md:py-24 lg:grid-cols-[1fr_1.2fr]">
-        <div className="max-w-2xl">
-          <p className="eyebrow mb-4 flex items-center gap-3 text-brass-light">
+      <div className="container-site relative py-16 md:py-20">
+        <div
+          className={cn(
+            "mx-auto max-w-3xl text-center",
+            brandGradient ? "text-brand-primary" : "text-background",
+          )}
+        >
+          <p
+            className={cn(
+              "eyebrow mb-4 flex items-center justify-center gap-3",
+              brandGradient ? "text-brand-primary" : "text-brass-light",
+            )}
+          >
             <span className="h-px w-8 bg-current" aria-hidden />
             {t("cta.startConversation")}
           </p>
-          <h2 className="text-[30px] text-background md:text-[44px]">{tc(title)}</h2>
-          <p className="mt-5 text-background/75">{tc(text)}</p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <ButtonLink to="/contact" variant="light" arrow>
+          <h2
+            className={cn(
+              "text-[30px] md:text-[44px]",
+              brandGradient ? "text-brand-primary" : "text-background",
+            )}
+          >
+            {tc(title)}
+          </h2>
+          <p className={cn("mt-5", brandGradient ? "text-charcoal" : "text-background/75")}>
+            {tc(text)}
+          </p>
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <ButtonLink to="/contact" variant={brandGradient ? "primary" : "light"} arrow>
               {t("header.discussOpportunity")}
             </ButtonLink>
-            <ButtonLink to="/contact" variant="ghostLight">
+            <ButtonLink to="/contact" variant={brandGradient ? "outline" : "ghostLight"}>
               {t("cta.contactTeam")}
             </ButtonLink>
           </div>
-          <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-background/15 pt-6">
+          <dl
+            className={cn(
+              "mx-auto mt-12 grid max-w-md grid-cols-3 gap-6 border-t pt-6",
+              brandGradient ? "border-brand-primary/15" : "border-background/15",
+            )}
+          >
             <div>
-              <dt className="text-[12px] uppercase tracking-[0.14em] text-background/55">
+              <dt
+                className={cn(
+                  "text-[12px] uppercase tracking-[0.14em]",
+                  brandGradient ? "text-brand-primary/65" : "text-background/55",
+                )}
+              >
                 {t("cta.basedIn")}
               </dt>
               <dd className="mt-1 font-display font-semibold">Kigali</dd>
             </div>
             <div>
-              <dt className="text-[12px] uppercase tracking-[0.14em] text-background/55">
+              <dt
+                className={cn(
+                  "text-[12px] uppercase tracking-[0.14em]",
+                  brandGradient ? "text-brand-primary/65" : "text-background/55",
+                )}
+              >
                 {t("cta.since")}
               </dt>
               <dd className="mt-1 font-display font-semibold">2015</dd>
             </div>
             <div>
-              <dt className="text-[12px] uppercase tracking-[0.14em] text-background/55">
+              <dt
+                className={cn(
+                  "text-[12px] uppercase tracking-[0.14em]",
+                  brandGradient ? "text-brand-primary/65" : "text-background/55",
+                )}
+              >
                 {t("cta.reach")}
               </dt>
               <dd className="mt-1 font-display font-semibold">{t("cta.eastAfrica")}</dd>
             </div>
           </dl>
-        </div>
-        <div className="relative w-full">
-          <WorldMap />
         </div>
       </div>
     </section>

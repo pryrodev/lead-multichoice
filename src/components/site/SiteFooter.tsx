@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { motion } from "motion/react";
 import { company, nav, procurementResources } from "@/content/site";
 import { services } from "@/content/services";
 import { Logo } from "./Logo";
+import { WorldMap } from "./WorldMap";
 import { useI18n } from "@/i18n/I18nProvider";
 import type { MessageKey } from "@/i18n/messages";
 
@@ -20,9 +22,26 @@ const navKeys: Record<(typeof nav)[number]["to"], MessageKey> = {
 export function SiteFooter() {
   const { t, tc } = useI18n();
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr_1.2fr]">
-        <div>
+    <footer className="relative isolate overflow-hidden bg-brand-primary/75 text-primary-foreground">
+      <motion.div
+        aria-hidden="true"
+        initial={{ opacity: 0, x: 48, scale: 1.02 }}
+        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="pointer-events-none absolute inset-x-0 top-0 z-0 w-full"
+      >
+        <div className="opacity-[0.45]">
+          <WorldMap className="w-full" />
+        </div>
+      </motion.div>
+      <div className="container-site relative z-10 grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr_1.2fr]">
+        <motion.div
+          initial={{ opacity: 0, x: -32 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.65, ease: "easeOut" }}
+        >
           <Logo inverted className="rounded-md bg-background px-3 py-2" />
           <p className="mt-6 max-w-sm text-[15px]">
             {tc(
@@ -55,7 +74,7 @@ export function SiteFooter() {
               </a>
             </li>
           </ul>
-        </div>
+        </motion.div>
         <FooterCol title={t("footer.company")}>
           {nav.map((n) => (
             <li key={n.to}>

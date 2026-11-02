@@ -1,7 +1,7 @@
 import { useLocation } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-// Reveals every page's sections on scroll with GSAP ScrollTrigger. The first (hero) section only gets a soft fade.
+// Reveals every page's sections on scroll with alternating horizontal motion.
 export function ScrollReveal() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -18,7 +18,7 @@ export function ScrollReveal() {
         const [first, ...rest] = all;
         if (first && pathname !== "/") {
           gsap.from(first.querySelectorAll("h1, p, .eyebrow"), {
-            y: 24,
+            x: (i: number) => (i % 2 === 0 ? -20 : 20),
             opacity: 0,
             duration: 0.8,
             ease: "power3.out",
@@ -27,16 +27,17 @@ export function ScrollReveal() {
         }
         rest
           .filter((s) => !s.hasAttribute("data-no-reveal"))
-          .forEach((section) => {
+          .forEach((section, sectionIndex) => {
             const container =
               section.querySelector(":scope > .container-site, :scope > div") ?? section;
             const items = Array.from(container.children);
             gsap.from(items, {
-              y: 48,
+              x: (i: number) => ((i + sectionIndex) % 2 === 0 ? -36 : 36),
+              y: 16,
               opacity: 0,
-              duration: 0.9,
+              duration: 0.75,
               ease: "power3.out",
-              stagger: 0.12,
+              stagger: 0.1,
               scrollTrigger: { trigger: section, start: "top 85%", once: true },
             });
             const imgs = section.querySelectorAll("img");

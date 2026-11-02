@@ -858,6 +858,406 @@ Object.assign(sw, {
   "Loading…": "Inapakia…",
 });
 
+Object.assign(rw, {
+  "Market Access | Supplier Engagement | Trade Facilitation":
+    "Kwinjira ku Isoko | Guhuza Abatanga Ibicuruzwa | Korohereza Ubucuruzi",
+  "Connecting Rwanda's buyers with trusted global suppliers.":
+    "Guhuza abaguzi bo mu Rwanda n'abatanga ibicuruzwa mpuzamahanga bizewe.",
+  "We bridge Rwanda's purchasing market and the global supply ecosystem, helping buyers and international suppliers find each other and coordinate with confidence.":
+    "Duhuza isoko ry'abaguzi bo mu Rwanda n'abatanga ibicuruzwa ku rwego mpuzamahanga, tugafasha impande zombi kumenyana no guhuza ibikorwa zifite icyizere.",
+  "I am an international supplier": "Ndi utanga ibicuruzwa mpuzamahanga",
+  "I represent a purchasing entity": "Mpagarariye ikigo kigura ibicuruzwa",
+  "Local knowledge. Global connections.": "Ubumenyi bwo mu karere. Ubufatanye mpuzamahanga.",
+  "Supporting commercial engagement in Rwanda and the region.":
+    "Dufasha mu bufatanye bw'ubucuruzi mu Rwanda no mu karere.",
+  "The opportunity": "Amahirwe ahari",
+  "Official procurement portal": "Urubuga rwemewe rw'amasoko",
+  "Bridging the information and access gap.": "Kuzuza icyuho cy'amakuru no kubona amasoko.",
+  "For international suppliers": "Ku batanga ibicuruzwa mpuzamahanga",
+  "Understand Rwanda's procurement environment, identify relevant opportunities and reach purchasing entities through local representation.":
+    "Sobanukirwa n'uburyo amasoko akorwa mu Rwanda, umenye amahirwe ahari kandi ugere ku bigo bigura ibicuruzwa ubinyujije ku bahagarariye ibikorwa mu karere.",
+  "For Rwanda's purchasing entities": "Ku bigo byo mu Rwanda bigura ibicuruzwa",
+  "Expand access to credible manufacturers, authorised distributors and specialised service providers around the world.":
+    "Bona uburyo bwagutse bwo kugera ku bakora ibicuruzwa bizewe, ababikwirakwiza babifitiye uburenganzira n'abatanga serivisi zihariye ku isi.",
+  "Our role": "Uruhare rwacu",
+  "From supplier identification to coordinated delivery.":
+    "Kuva ku kumenya abatanga ibicuruzwa kugeza ku ishyikirizwa rihujwe neza.",
+  "We structure the connection, facilitate engagement and keep the work moving across the parties involved.":
+    "Dutunganya uko impande zihuzwa, tukorohereza imikoranire kandi tugakurikirana ibikorwa by'ababigizemo uruhare.",
+  Identify: "Kumenya",
+  Verify: "Gusuzuma",
+  Connect: "Guhuza",
+  Coordinate: "Guhuza ibikorwa",
+  "Find relevant buyers, suppliers and sourcing opportunities.":
+    "Shaka abaguzi, abatanga ibicuruzwa n'amahirwe yo gushaka ibikenewe.",
+  "Support due diligence and confirm the right points of contact.":
+    "Fasha mu igenzura no kwemeza abantu bakwiye kuvugana.",
+  "Facilitate direct conversations between the parties.":
+    "Korohereza ibiganiro bitaziguye hagati y'impande.",
+  "Help align procurement, logistics and delivery follow-up.":
+    "Fasha guhuza amasoko, ubwikorezi no gukurikirana ishyikirizwa.",
+  "What we do": "Ibyo dukora",
+  "Local coordination across the supply journey.":
+    "Guhuza ibikorwa mu rugendo rw'itangwa ry'ibicuruzwa.",
+  "Explore all services": "Reba serivisi zose",
+  "The value we work toward": "Ibyiza tugamije",
+  "More efficient sourcing. Stronger supply partnerships.":
+    "Gushaka ibicuruzwa neza kurushaho. Ubufatanye bukomeye mu itangwa ry'ibicuruzwa.",
+  "More informed sourcing decisions":
+    "Ibyemezo byo gushaka ibicuruzwa bishingiye ku makuru ahagije",
+  "Access to credible supplier options": "Kubona abatanga ibicuruzwa bizewe",
+  "Reliable supply coordination": "Guhuza itangwa ry'ibicuruzwa mu buryo bwizewe",
+  "Long-term commercial partnerships": "Ubufatanye burambye mu bucuruzi",
+  "Start a conversation": "Tangira ikiganiro",
+  "Looking for a supplier or a route into Rwanda?":
+    "Urashaka ugutanga ibicuruzwa cyangwa inzira yo kwinjira ku isoko ry'u Rwanda?",
+  "Tell us what you are sourcing or the market you want to reach.":
+    "Tubwire ibyo ushaka kugura cyangwa isoko wifuza kugeraho.",
+});
+
+Object.assign(fr, {
+  "Market Access | Supplier Engagement | Trade Facilitation":
+    "Accès au marché | Relations fournisseurs | Facilitation des échanges",
+  "Connecting Rwanda's buyers with trusted global suppliers.":
+    "Relier les acheteurs rwandais à des fournisseurs internationaux fiables.",
+  "We bridge Rwanda's purchasing market and the global supply ecosystem, helping buyers and international suppliers find each other and coordinate with confidence.":
+    "Nous faisons le lien entre le marché des achats rwandais et l'offre mondiale, afin que les acheteurs et fournisseurs internationaux se trouvent et coordonnent leurs échanges en confiance.",
+  "I am an international supplier": "Je suis un fournisseur international",
+  "I represent a purchasing entity": "Je représente un organisme acheteur",
+  "Local knowledge. Global connections.": "Expertise locale. Connexions internationales.",
+  "Supporting commercial engagement in Rwanda and the region.":
+    "Nous accompagnons les relations commerciales au Rwanda et dans la région.",
+  "The opportunity": "L'opportunité",
+  "Official procurement portal": "Portail officiel des marchés publics",
+  "Bridging the information and access gap.":
+    "Combler le manque d'information et d'accès au marché.",
+  "For international suppliers": "Pour les fournisseurs internationaux",
+  "Understand Rwanda's procurement environment, identify relevant opportunities and reach purchasing entities through local representation.":
+    "Comprendre les achats au Rwanda, repérer les possibilités pertinentes et accéder aux acheteurs grâce à une représentation locale.",
+  "For Rwanda's purchasing entities": "Pour les organismes acheteurs rwandais",
+  "Expand access to credible manufacturers, authorised distributors and specialised service providers around the world.":
+    "Élargir l'accès aux fabricants fiables, aux distributeurs agréés et aux prestataires spécialisés dans le monde entier.",
+  "Our role": "Notre rôle",
+  "From supplier identification to coordinated delivery.":
+    "De l'identification des fournisseurs à la coordination de la livraison.",
+  "We structure the connection, facilitate engagement and keep the work moving across the parties involved.":
+    "Nous organisons la mise en relation, facilitons les échanges et coordonnons l'avancement entre les parties concernées.",
+  Identify: "Identifier",
+  Verify: "Vérifier",
+  Connect: "Relier",
+  Coordinate: "Coordonner",
+  "Find relevant buyers, suppliers and sourcing opportunities.":
+    "Repérer les acheteurs, fournisseurs et possibilités d'approvisionnement pertinents.",
+  "Support due diligence and confirm the right points of contact.":
+    "Appuyer les vérifications et confirmer les bons interlocuteurs.",
+  "Facilitate direct conversations between the parties.":
+    "Faciliter les échanges directs entre les parties.",
+  "Help align procurement, logistics and delivery follow-up.":
+    "Coordonner les achats, la logistique et le suivi des livraisons.",
+  "What we do": "Nos activités",
+  "Local coordination across the supply journey.":
+    "Une coordination locale à chaque étape de l'approvisionnement.",
+  "Explore all services": "Découvrir tous les services",
+  "The value we work toward": "Les résultats visés",
+  "More efficient sourcing. Stronger supply partnerships.":
+    "Des achats plus efficaces. Des partenariats d'approvisionnement plus solides.",
+  "More informed sourcing decisions": "Des décisions d'approvisionnement mieux éclairées",
+  "Access to credible supplier options": "L'accès à des fournisseurs fiables",
+  "Reliable supply coordination": "Une coordination fiable des approvisionnements",
+  "Long-term commercial partnerships": "Des partenariats commerciaux durables",
+  "Start a conversation": "Engageons la conversation",
+  "Looking for a supplier or a route into Rwanda?":
+    "Vous cherchez un fournisseur ou un accès au marché rwandais ?",
+  "Tell us what you are sourcing or the market you want to reach.":
+    "Parlez-nous de vos besoins d'approvisionnement ou du marché que vous souhaitez atteindre.",
+});
+
+Object.assign(sw, {
+  "Market Access | Supplier Engagement | Trade Facilitation":
+    "Upatikanaji wa Soko | Ushirikiano na Wasambazaji | Uwezeshaji wa Biashara",
+  "Connecting Rwanda's buyers with trusted global suppliers.":
+    "Kuunganisha wanunuzi wa Rwanda na wasambazaji wa kimataifa wanaoaminika.",
+  "We bridge Rwanda's purchasing market and the global supply ecosystem, helping buyers and international suppliers find each other and coordinate with confidence.":
+    "Tunaunganisha soko la ununuzi la Rwanda na mtandao wa ugavi wa kimataifa, tukiwasaidia wanunuzi na wasambazaji kupata kila mmoja na kuratibu shughuli kwa uhakika.",
+  "I am an international supplier": "Mimi ni msambazaji wa kimataifa",
+  "I represent a purchasing entity": "Ninawakilisha taasisi ya ununuzi",
+  "Local knowledge. Global connections.": "Uelewa wa ndani. Miunganisho ya kimataifa.",
+  "Supporting commercial engagement in Rwanda and the region.":
+    "Tunaunga mkono ushirikiano wa kibiashara nchini Rwanda na katika ukanda huu.",
+  "The opportunity": "Fursa iliyopo",
+  "Official procurement portal": "Tovuti rasmi ya zabuni",
+  "Bridging the information and access gap.": "Kuziba pengo la taarifa na upatikanaji wa soko.",
+  "For international suppliers": "Kwa wasambazaji wa kimataifa",
+  "Understand Rwanda's procurement environment, identify relevant opportunities and reach purchasing entities through local representation.":
+    "Elewa mazingira ya ununuzi nchini Rwanda, tambua fursa husika na ufikie taasisi za ununuzi kupitia uwakilishi wa ndani.",
+  "For Rwanda's purchasing entities": "Kwa taasisi za ununuzi za Rwanda",
+  "Expand access to credible manufacturers, authorised distributors and specialised service providers around the world.":
+    "Panua upatikanaji wa wazalishaji wanaoaminika, wasambazaji walioidhinishwa na watoa huduma maalumu duniani.",
+  "Our role": "Jukumu letu",
+  "From supplier identification to coordinated delivery.":
+    "Kuanzia kutambua wasambazaji hadi kuratibu uwasilishaji.",
+  "We structure the connection, facilitate engagement and keep the work moving across the parties involved.":
+    "Tunapanga muunganisho, tunawezesha mawasiliano na kuratibu maendeleo ya kazi kati ya wahusika.",
+  Identify: "Tambua",
+  Verify: "Thibitisha",
+  Connect: "Unganisha",
+  Coordinate: "Ratibu",
+  "Find relevant buyers, suppliers and sourcing opportunities.":
+    "Tafuta wanunuzi, wasambazaji na fursa zinazofaa za ununuzi.",
+  "Support due diligence and confirm the right points of contact.":
+    "Saidia ukaguzi wa kina na uthibitishe watu sahihi wa mawasiliano.",
+  "Facilitate direct conversations between the parties.":
+    "Wezesha mazungumzo ya moja kwa moja kati ya wahusika.",
+  "Help align procurement, logistics and delivery follow-up.":
+    "Saidia kuratibu ununuzi, usafirishaji na ufuatiliaji wa uwasilishaji.",
+  "What we do": "Tunachofanya",
+  "Local coordination across the supply journey.": "Uratibu wa ndani katika safari nzima ya ugavi.",
+  "Explore all services": "Angalia huduma zote",
+  "The value we work toward": "Thamani tunayolenga",
+  "More efficient sourcing. Stronger supply partnerships.":
+    "Ununuzi wenye ufanisi zaidi. Ushirikiano imara wa ugavi.",
+  "More informed sourcing decisions": "Maamuzi ya ununuzi yenye taarifa zaidi",
+  "Access to credible supplier options": "Upatikanaji wa wasambazaji wanaoaminika",
+  "Reliable supply coordination": "Uratibu wa ugavi unaotegemewa",
+  "Long-term commercial partnerships": "Ushirikiano wa kibiashara wa muda mrefu",
+  "Start a conversation": "Anza mazungumzo",
+  "Looking for a supplier or a route into Rwanda?":
+    "Unatafuta msambazaji au njia ya kuingia katika soko la Rwanda?",
+  "Tell us what you are sourcing or the market you want to reach.":
+    "Tuambie unachotafuta kununua au soko unalotaka kufikia.",
+});
+
+Object.assign(rw, {
+  "Follow your requests, engagement progress and the latest updates from our team.":
+    "Kurikirana ubusabe bwawe, aho ubufatanye bugeze n'amakuru mashya atangwa n'ikipe yacu.",
+  "Viewing dashboard as": "Urimo kureba iyi dashibodi nka",
+  "Purchasing entity": "Ikigo kigura ibicuruzwa",
+  "International supplier": "Utanga ibicuruzwa mpuzamahanga",
+  "Submit a sourcing request": "Ohereza ubusabe bwo gushaka ibicuruzwa",
+  "Discuss a supplier opportunity": "Ganira ku mahirwe yo gutanga ibicuruzwa",
+  "Open requests": "Ubusabe bugikurikiranwa",
+  "Needs your response": "Haracyategerejwe igisubizo cyawe",
+  "Active engagements": "Ubufatanye burimo gukorwa",
+  Completed: "Byarangiye",
+  "Relevant opportunities": "Amahirwe akureba",
+  Introductions: "Imenyekanisha ry'abafatanyabikorwa",
+  "Current engagement": "Ubufatanye buri gukurikiranwa",
+  "Irrigation pump request": "Ubusabe bw'amapompe yo kuhira imyaka",
+  "20 water pumps for a district irrigation project":
+    "Amapompe y'amazi 20 yo kuhira imyaka mu karere",
+  "Supplier identification": "Kumenya abatanga ibicuruzwa",
+  "Today, 09:15": "Uyu munsi, 09:15",
+  "Today, 10:30": "Uyu munsi, 10:30",
+  Today: "Uyu munsi",
+  Yesterday: "Ejo",
+  "Current stage": "Icyiciro kiriho",
+  "Last updated": "Amakuru aheruka kuvugururwa",
+  "Engagement progress": "Aho ubufatanye bugeze",
+  "Request received": "Ubusabe bwakiriwe",
+  "After-sales support": "Ubufasha nyuma yo kugurisha",
+  "Daily activity": "Ibikorwa bya buri munsi",
+  "Request updates": "Amakuru mashya ku busabe",
+  "Supplier asked to confirm pump capacity":
+    "Umutanga ibicuruzwa yasabwe kwemeza ubushobozi bw'ipompe",
+  "We are checking technical fit against your requirement.":
+    "Turimo kugenzura niba ibisabwa bya tekiniki bihuye n'ibyo ukeneye.",
+  "Yesterday, 14:40": "Ejo, 14:40",
+  "Yesterday, 15:10": "Ejo, 15:10",
+  "Product specifications matched with two suppliers":
+    "Ibisabwa ku bicuruzwa byahujwe n'ababitanga babiri",
+  "Supplier credentials are being reviewed before an introduction.":
+    "Inyandiko z'umutanga ibicuruzwa zirimo kugenzurwa mbere yo kubahuza.",
+  "Delivery location and target date confirmed":
+    "Aho ibicuruzwa bizashyikirizwa n'itariki biteganyijwe byemejwe",
+  "The request is ready for supplier identification.":
+    "Ubusabe bwiteguye ko hashakwa abatanga ibicuruzwa.",
+  "29 Oct": "29 Ukwakira",
+  "30 Oct": "30 Ukwakira",
+  "The LEAD MULTICHOICE team started the initial requirements review.":
+    "Ikipe ya LEAD MULTICHOICE yatangiye gusuzuma ibisabwa.",
+  "Updated by LEAD MULTICHOICE team": "Byavuguruwe n'ikipe ya LEAD MULTICHOICE",
+  "Ask about this update": "Baza ibijyanye n'aya makuru",
+  "Your next step": "Intambwe ikurikira",
+  "Confirm the required pump capacity": "Emeza ubushobozi bw'ipompe bukenewe",
+  "Your response will help us confirm supplier fit.":
+    "Igisubizo cyawe kizadufasha kwemeza ko umutanga ibicuruzwa akwiye.",
+  "Water pump supply opportunity": "Amahirwe yo gutanga amapompe y'amazi",
+  "District irrigation project · Rwanda": "Umushinga wo kuhira imyaka mu karere · u Rwanda",
+  "Supplier review": "Isuzuma ry'umutanga ibicuruzwa",
+  "Authorization letter requested": "Hasabwe ibaruwa y'uburenganzira",
+  "Please share the current document so the review can continue.":
+    "Sangiza inyandiko igezweho kugira ngo isuzuma rikomeze.",
+  "Your product range matched a buyer requirement":
+    "Ibicuruzwa byawe bihuye n'ibyo umuguzi akeneye",
+  "The buyer is sourcing pumps for an irrigation project in Rwanda.":
+    "Umuguzi arashaka amapompe yo kuhira imyaka mu mushinga wo mu Rwanda.",
+  "Company profile reviewed": "Umwirondoro w'ikigo wasuzumwe",
+  "The team is checking product and authorization information.":
+    "Ikipe irimo kugenzura amakuru y'ibicuruzwa n'uburenganzira bwo kubitanga.",
+  "Supplier enquiry received": "Ubusabe bw'umutanga ibicuruzwa bwakiriwe",
+  "Your request to explore the Rwandan market is under review.":
+    "Ubusabe bwawe bwo kwinjira ku isoko ry'u Rwanda burimo gusuzumwa.",
+  "Share your current manufacturer authorization letter":
+    "Sangiza ibaruwa igezweho iguha uburenganzira bwo guhagararira uruganda",
+  "This helps us complete the supplier verification review.":
+    "Ibi bizadufasha kurangiza igenzura ry'umutanga ibicuruzwa.",
+  "Contact your coordinator": "Vugana n'uguhuza ibikorwa byawe",
+  "Your account details": "Amakuru ya konti yawe",
+});
+
+Object.assign(fr, {
+  "Follow your requests, engagement progress and the latest updates from our team.":
+    "Suivez vos demandes, l'avancement de vos échanges et les dernières informations de notre équipe.",
+  "Viewing dashboard as": "Tableau de bord affiché pour",
+  "Purchasing entity": "Organisme acheteur",
+  "International supplier": "Fournisseur international",
+  "Submit a sourcing request": "Soumettre une demande d'approvisionnement",
+  "Discuss a supplier opportunity": "Parler d'une opportunité fournisseur",
+  "Open requests": "Demandes en cours",
+  "Needs your response": "Votre réponse est attendue",
+  "Active engagements": "Échanges actifs",
+  Completed: "Terminés",
+  "Relevant opportunities": "Opportunités pertinentes",
+  Introductions: "Mises en relation",
+  "Current engagement": "Échange en cours",
+  "Irrigation pump request": "Demande de pompes d'irrigation",
+  "20 water pumps for a district irrigation project":
+    "20 pompes à eau pour un projet d'irrigation de district",
+  "Supplier identification": "Recherche de fournisseurs",
+  "Today, 09:15": "Aujourd'hui, 09:15",
+  "Today, 10:30": "Aujourd'hui, 10:30",
+  Today: "Aujourd'hui",
+  Yesterday: "Hier",
+  "Current stage": "Étape actuelle",
+  "Last updated": "Dernière mise à jour",
+  "Engagement progress": "Avancement de l'échange",
+  "Request received": "Demande reçue",
+  "After-sales support": "Suivi après-vente",
+  "Daily activity": "Activité quotidienne",
+  "Request updates": "Mises à jour de la demande",
+  "Supplier asked to confirm pump capacity":
+    "Le fournisseur doit confirmer la capacité de la pompe",
+  "We are checking technical fit against your requirement.":
+    "Nous vérifions l'adéquation technique avec votre besoin.",
+  "Yesterday, 14:40": "Hier, 14:40",
+  "Yesterday, 15:10": "Hier, 15:10",
+  "Product specifications matched with two suppliers":
+    "Les spécifications correspondent à celles de deux fournisseurs",
+  "Supplier credentials are being reviewed before an introduction.":
+    "Les justificatifs du fournisseur sont examinés avant la mise en relation.",
+  "Delivery location and target date confirmed":
+    "Le lieu et la date de livraison souhaitée sont confirmés",
+  "The request is ready for supplier identification.":
+    "La demande est prête pour la recherche de fournisseurs.",
+  "29 Oct": "29 oct.",
+  "30 Oct": "30 oct.",
+  "The LEAD MULTICHOICE team started the initial requirements review.":
+    "L'équipe de LEAD MULTICHOICE a commencé l'examen initial des besoins.",
+  "Updated by LEAD MULTICHOICE team": "Mis à jour par l'équipe de LEAD MULTICHOICE",
+  "Ask about this update": "Poser une question sur cette mise à jour",
+  "Your next step": "Votre prochaine étape",
+  "Confirm the required pump capacity": "Confirmer la capacité de pompe requise",
+  "Your response will help us confirm supplier fit.":
+    "Votre réponse nous aidera à confirmer l'adéquation du fournisseur.",
+  "Water pump supply opportunity": "Opportunité de fourniture de pompes à eau",
+  "District irrigation project · Rwanda": "Projet d'irrigation de district · Rwanda",
+  "Supplier review": "Examen du fournisseur",
+  "Authorization letter requested": "Lettre d'autorisation demandée",
+  "Please share the current document so the review can continue.":
+    "Veuillez transmettre le document à jour pour poursuivre l'examen.",
+  "Your product range matched a buyer requirement":
+    "Votre gamme correspond au besoin d'un acheteur",
+  "The buyer is sourcing pumps for an irrigation project in Rwanda.":
+    "L'acheteur recherche des pompes pour un projet d'irrigation au Rwanda.",
+  "Company profile reviewed": "Profil de l'entreprise examiné",
+  "The team is checking product and authorization information.":
+    "L'équipe vérifie les informations sur les produits et les autorisations.",
+  "Supplier enquiry received": "Demande du fournisseur reçue",
+  "Your request to explore the Rwandan market is under review.":
+    "Votre demande d'accès au marché rwandais est en cours d'examen.",
+  "Share your current manufacturer authorization letter":
+    "Transmettre votre lettre d'autorisation du fabricant à jour",
+  "This helps us complete the supplier verification review.":
+    "Cela nous aidera à terminer la vérification du fournisseur.",
+  "Contact your coordinator": "Contacter votre coordinateur",
+  "Your account details": "Informations de votre compte",
+});
+
+Object.assign(sw, {
+  "Follow your requests, engagement progress and the latest updates from our team.":
+    "Fuatilia maombi yako, maendeleo ya ushirikiano na taarifa za hivi karibuni kutoka kwa timu yetu.",
+  "Viewing dashboard as": "Unaangalia dashibodi kama",
+  "Purchasing entity": "Taasisi ya ununuzi",
+  "International supplier": "Msambazaji wa kimataifa",
+  "Submit a sourcing request": "Wasilisha ombi la kutafuta bidhaa",
+  "Discuss a supplier opportunity": "Jadili fursa ya usambazaji",
+  "Open requests": "Maombi yanayoendelea",
+  "Needs your response": "Jibu lako linahitajika",
+  "Active engagements": "Ushirikiano unaoendelea",
+  Completed: "Yaliyokamilika",
+  "Relevant opportunities": "Fursa zinazokufaa",
+  Introductions: "Utambulisho kati ya wahusika",
+  "Current engagement": "Ushirikiano wa sasa",
+  "Irrigation pump request": "Ombi la pampu za umwagiliaji",
+  "20 water pumps for a district irrigation project":
+    "Pampu 20 za maji kwa mradi wa umwagiliaji wa wilaya",
+  "Supplier identification": "Kutambua wasambazaji",
+  "Today, 09:15": "Leo, 09:15",
+  "Today, 10:30": "Leo, 10:30",
+  Today: "Leo",
+  Yesterday: "Jana",
+  "Current stage": "Hatua ya sasa",
+  "Last updated": "Ilisasishwa mwisho",
+  "Engagement progress": "Maendeleo ya ushirikiano",
+  "Request received": "Ombi limepokelewa",
+  "After-sales support": "Huduma baada ya mauzo",
+  "Daily activity": "Shughuli za kila siku",
+  "Request updates": "Taarifa za ombi",
+  "Supplier asked to confirm pump capacity": "Msambazaji ameombwa kuthibitisha uwezo wa pampu",
+  "We are checking technical fit against your requirement.":
+    "Tunathibitisha kama vipimo vya kiufundi vinafaa kwa mahitaji yako.",
+  "Yesterday, 14:40": "Jana, 14:40",
+  "Yesterday, 15:10": "Jana, 15:10",
+  "Product specifications matched with two suppliers":
+    "Vipimo vya bidhaa vimeendana na wasambazaji wawili",
+  "Supplier credentials are being reviewed before an introduction.":
+    "Hati za msambazaji zinakaguliwa kabla ya kuwaunganisha wahusika.",
+  "Delivery location and target date confirmed":
+    "Mahali pa kuwasilisha na tarehe inayolengwa vimethibitishwa",
+  "The request is ready for supplier identification.": "Ombi liko tayari kwa kutambua wasambazaji.",
+  "29 Oct": "29 Okt",
+  "30 Oct": "30 Okt",
+  "The LEAD MULTICHOICE team started the initial requirements review.":
+    "Timu ya LEAD MULTICHOICE imeanza kupitia mahitaji ya awali.",
+  "Updated by LEAD MULTICHOICE team": "Imesasishwa na timu ya LEAD MULTICHOICE",
+  "Ask about this update": "Uliza kuhusu taarifa hii",
+  "Your next step": "Hatua yako inayofuata",
+  "Confirm the required pump capacity": "Thibitisha uwezo wa pampu unaohitajika",
+  "Your response will help us confirm supplier fit.":
+    "Jibu lako litatusaidia kuthibitisha kama msambazaji anafaa.",
+  "Water pump supply opportunity": "Fursa ya kusambaza pampu za maji",
+  "District irrigation project · Rwanda": "Mradi wa umwagiliaji wa wilaya · Rwanda",
+  "Supplier review": "Ukaguzi wa msambazaji",
+  "Authorization letter requested": "Barua ya idhini imeombwa",
+  "Please share the current document so the review can continue.":
+    "Tafadhali tuma hati ya sasa ili ukaguzi uendelee.",
+  "Your product range matched a buyer requirement": "Bidhaa zako zinaendana na hitaji la mnunuzi",
+  "The buyer is sourcing pumps for an irrigation project in Rwanda.":
+    "Mnunuzi anatafuta pampu kwa mradi wa umwagiliaji nchini Rwanda.",
+  "Company profile reviewed": "Wasifu wa kampuni umekaguliwa",
+  "The team is checking product and authorization information.":
+    "Timu inakagua taarifa za bidhaa na idhini.",
+  "Supplier enquiry received": "Ombi la msambazaji limepokelewa",
+  "Your request to explore the Rwandan market is under review.":
+    "Ombi lako la kutafuta fursa katika soko la Rwanda linakaguliwa.",
+  "Share your current manufacturer authorization letter":
+    "Tuma barua yako ya sasa ya idhini kutoka kwa mtengenezaji",
+  "This helps us complete the supplier verification review.":
+    "Hii itatusaidia kukamilisha ukaguzi wa uthibitisho wa msambazaji.",
+  "Contact your coordinator": "Wasiliana na mratibu wako",
+  "Your account details": "Taarifa za akaunti yako",
+});
+
 const copy: Partial<Record<Language, Record<string, string>>> = { rw, fr, sw };
 export function translateSiteCopy(language: Language, text: string) {
   return language === "en" ? text : (copy[language]?.[text] ?? text);

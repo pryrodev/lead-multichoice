@@ -241,8 +241,7 @@
   color: var(--brand-primary);
 }
 .site-nav-link:hover::after,
-.site-nav-link:focus-visible::after,
-.site-nav-link[aria-current="page"]::after {
+.site-nav-link:focus-visible::after {
   transform: scaleX(1);
 }
 .cta-attention {
